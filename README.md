@@ -8,6 +8,8 @@ Aplicacao web simples utilizando o framework Flask
 Para rodar a aplicação containerizada com Docker:
 
 (dentro do diretorio)
+
 docker build -t meuapp:latest .
+
 docker run -p 8080:8080 meuapp:latest
 
