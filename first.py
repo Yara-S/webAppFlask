@@ -13,6 +13,7 @@ def ola():
 				<html>
 					<h1> Olá, {{user_name}} , bem vinda a nossa página! </h1>
 
+					<p> Matérias matriculadas: </p>
 					{% for subject in subjects %}
 						<li> {{subject}} </li>
 					{% endfor %}

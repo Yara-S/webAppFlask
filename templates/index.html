@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<HTML>
+<head>
+	<link rel="stylesheet" href="../static/css/style2.css">
+</head>
+<body>
+	<h1>Olá, {{user_name}}, bem vinda a nossa página</h1>
+	<p>Estas são as matérias em que você está matriculada:</p>
+	<ul>
+		{% for subject in subjects %}
+			<li> {{subject}} </li>
+		{% endfor %}
+	</ul>
+</body>
+</HTML>
