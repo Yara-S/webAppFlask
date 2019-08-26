@@ -8,7 +8,7 @@
 	<p>Estas são as matérias em que você está matriculada:</p>
 	<ul>
 		{% for subject in subjects %}
-			<li> {{subject}} </li>
+			<li> <a href="{{ url_for('subject', subject_name = subject ) }}"> {{subject}} </a></li>
 		{% endfor %}
 	</ul>
 </body>
