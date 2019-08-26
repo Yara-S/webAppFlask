@@ -7,7 +7,7 @@ app = Flask(__name__)
 def ola():
 	# index.html follows jinja template
 	name = 'Mariana'
-	subjects = ["História", "Ingles", "Biologia", "Física"]
+	subjects = ["Historia", "Ingles", "Biologia", "Fisica"]
 	return  render_template("index.html", user_name = name, subjects = subjects)
 
 @app.route("/subject/<subject_name>")
